@@ -4,6 +4,7 @@ import { LineChartDots } from "@/components/charts/LineChartDots"
 import { PieChartComponent } from "@/components/charts/PieChart"
 import { SiteHeader } from "@/components/site-header"
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar"
+import VideoSection from "@/components/video-section"
 
 export default function Page() {
   return (
@@ -13,12 +14,12 @@ export default function Page() {
         <SiteHeader />
         <div className="flex flex-1 flex-col p-8">
           <div className="@container/main flex flex-1 flex-col gap-2">
-          <h2 className="text-3xl font-bold">Dashboard</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <LineChartDots/>
-            <PieChartComponent/>
-            <BarChartLabel />
+            <h2 className="text-3xl font-bold">Dashboard</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <LineChartDots />
+              <PieChartComponent />
+              <BarChartLabel />
+              <VideoSection />
             </div>
           </div>
         </div>
